@@ -49,4 +49,18 @@
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0"/>
     </ItemGroup>
 
+
+    <ItemGroup>
+      <MauiXaml Update="LabPages\Lab1\Lab1.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="LabPages\Lab1\Lab1.xaml.cs">
+        <DependentUpon>Lab1.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
 </Project>
