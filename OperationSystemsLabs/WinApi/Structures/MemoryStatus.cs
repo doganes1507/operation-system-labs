@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace OperationSystemsLabs.LabPages.Lab1;
+namespace OperationSystemsLabs.WinApi.Structures;
 
 [StructLayout(LayoutKind.Sequential)]
 public struct MemoryStatus

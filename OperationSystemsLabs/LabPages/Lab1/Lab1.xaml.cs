@@ -1,6 +1,7 @@
 ﻿using System.Runtime.InteropServices;
-using static OperationSystemsLabs.LabPages.Lab1.WinApiMethods;
+using static OperationSystemsLabs.WinApi.WinApiMethods;
 using System.Text;
+using OperationSystemsLabs.WinApi.Structures;
 
 namespace OperationSystemsLabs.LabPages.Lab1;
 

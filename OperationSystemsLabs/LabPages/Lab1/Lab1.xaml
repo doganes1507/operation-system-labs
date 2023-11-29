@@ -8,93 +8,76 @@
         <VerticalStackLayout>
             <Label
                 Text="Лабораторная работа №1"
-                FontAttributes="Bold"
-                FontSize="18"
-                HorizontalOptions="Center"
-                Margin="24, 8, 24, 8" />
+                Style="{StaticResource HeaderText}" />
 
             <Label
                 Text="Функции получения системной информации"
-                FontSize="14"
-                HorizontalOptions="Center"
-                Margin="24, 0, 24, 72" />
+                Style="{StaticResource RegularText}"
+                HorizontalOptions="Center" />
 
             <Button
                 Text="Получить имя компьютера"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayComputerNameButton_OnClicked" />
 
             <Button
                 Text="Получить имя пользователя"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayUserNameButton_OnClicked" />
 
             <Button
                 Text="Путь к каталогу Windows"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayWindowsDirectoryButton_OnClicked" />
 
             <Button
                 Text="Версия операционной системы"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayOsVersionButton_OnClicked" />
 
             <Button
                 Text="Ширина экрана в пиксеоях"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayScreenWidthButton_OnClicked" />
 
             <Button
                 Text="Высота экрана в пикселях"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayScreenHeightButton_OnClicked" />
 
             <Button
                 Text="Размер курсора"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayCursorSizeButton_OnClicked" />
 
             <Button
                 Text="Скорость двойного щелчка"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayDoubleClickTimeButton_OnClicked" />
 
             <Button
                 Text="Текущее время"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplaySystemTimeButton_OnClicked" />
 
             <Button
                 Text="Время с запуска системы"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayTimeSinceStartupButton_OnClicked" />
 
             <Button
                 Text="Запустить консоль Python"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="StartPythonButton_OnClicked" />
 
             <Button
                 Text="Объем оперативной памяти"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayTotalRamCapacityButton_OnClicked" />
 
             <Button
                 Text="Количество потоков процессора"
-                Style="{StaticResource PurpleButtonStyle}"
-                Margin="24, 0, 24, 24"
+                Style="{StaticResource BlueButtonStyle}"
                 Clicked="DisplayProcessorCountButton_OnClicked" />
 
         </VerticalStackLayout>

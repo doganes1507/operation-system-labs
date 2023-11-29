@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="using:System"
+             x:Class="OperationSystemsLabs.LabPages.Lab2.Lab2">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+                Text="Лабораторная работа №2"
+                Style="{StaticResource HeaderText}" />
+
+            <Label
+                Text="Процессы и потоки"
+                Style="{StaticResource RegularText}"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Идентификатор текущего процесса:"
+                Style="{StaticResource RegularText}" />
+
+            <Label
+                x:Name="CurrentProcessId"
+                FontSize="14" />
+
+            <Label
+                Text="Псевдодескриптор текущего процесса:"
+                Style="{StaticResource RegularText}" />
+
+            <Label
+                x:Name="CurrentProcessPseudoDescriptor"
+                Style="{StaticResource RegularText}" />
+
+            <Label
+                Text="Дескриптор текущего процесса:"
+                Style="{StaticResource RegularText}" />
+
+            <Label
+                x:Name="CurrentProcessDescriptor"
+                Style="{StaticResource RegularText}" />
+
+            <Label
+                Text="Копия дескриптора текущего процесса:"
+                Style="{StaticResource RegularText}" />
+
+            <Label
+                x:Name="CurrentProcessDescriptorCopy"
+                Style="{StaticResource RegularText}" />
+
+            <Label
+                Text="Выберите и введите ключевое свойство для поиска процесса:"
+                Style="{StaticResource RegularText}"
+                HorizontalOptions="Center" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Entry
+                    Grid.Column="0"
+                    x:Name="ModuleProperty"
+                    FontSize="14" />
+
+                <Picker
+                    Grid.Column="1"
+                    x:Name="ModulePropertyType"
+                    HorizontalOptions="End"
+                    FontSize="14" />
+
+            </Grid>
+
+            <Button
+                Text="Получить"
+                Style="{StaticResource BlueButtonStyle}"
+                Clicked="GetModuleInfo_OnClicked" />
+            
+            <Button
+                Text="Посмотреть информацию о процессах"
+                Style="{StaticResource BlueButtonStyle}"
+                Clicked="NavigateToProcessInfosPage_OnClicked"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

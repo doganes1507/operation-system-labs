@@ -7,9 +7,19 @@
     <Application.Resources>
         <ResourceDictionary>
 
-            <Style x:Key="PurpleButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#0055F9"/>
-                <Setter Property="TextColor" Value="White"/>
+            <Style x:Key="BlueButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#0055F9" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style x:Key="HeaderText" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="RegularText" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
             </Style>
 
             <ResourceDictionary.MergedDictionaries>
