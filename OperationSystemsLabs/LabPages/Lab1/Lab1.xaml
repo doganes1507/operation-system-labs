@@ -6,79 +6,92 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Label
-                Text="Лабораторная работа №1"
-                Style="{StaticResource HeaderText}" />
 
-            <Label
-                Text="Функции получения системной информации"
-                Style="{StaticResource RegularText}"
-                HorizontalOptions="Center" />
+            <VerticalStackLayout
+                Margin="24, 16, 24, 0"
+                Spacing="4">
 
-            <Button
-                Text="Получить имя компьютера"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayComputerNameButton_OnClicked" />
+                <Label
+                    Text="Лабораторная работа №1"
+                    Style="{StaticResource HeaderText}" />
 
-            <Button
-                Text="Получить имя пользователя"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayUserNameButton_OnClicked" />
+                <Label
+                    Text="&quot;Функции получения системной информации&quot;"
+                    Style="{StaticResource RegularText}"
+                    HorizontalOptions="Center" />
+                
+            </VerticalStackLayout>
 
-            <Button
-                Text="Путь к каталогу Windows"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayWindowsDirectoryButton_OnClicked" />
+            <VerticalStackLayout
+                Margin="24, 72, 24, 24"
+                Spacing="16">
 
-            <Button
-                Text="Версия операционной системы"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayOsVersionButton_OnClicked" />
+                <Button
+                    Text="Получить имя компьютера"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayComputerNameButton_OnClicked" />
 
-            <Button
-                Text="Ширина экрана в пиксеоях"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayScreenWidthButton_OnClicked" />
+                <Button
+                    Text="Получить имя пользователя"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayUserNameButton_OnClicked" />
 
-            <Button
-                Text="Высота экрана в пикселях"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayScreenHeightButton_OnClicked" />
+                <Button
+                    Text="Путь к каталогу Windows"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayWindowsDirectoryButton_OnClicked" />
 
-            <Button
-                Text="Размер курсора"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayCursorSizeButton_OnClicked" />
+                <Button
+                    Text="Версия операционной системы"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayOsVersionButton_OnClicked" />
 
-            <Button
-                Text="Скорость двойного щелчка"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayDoubleClickTimeButton_OnClicked" />
+                <Button
+                    Text="Ширина экрана в пиксеоях"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayScreenWidthButton_OnClicked" />
 
-            <Button
-                Text="Текущее время"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplaySystemTimeButton_OnClicked" />
+                <Button
+                    Text="Высота экрана в пикселях"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayScreenHeightButton_OnClicked" />
 
-            <Button
-                Text="Время с запуска системы"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayTimeSinceStartupButton_OnClicked" />
+                <Button
+                    Text="Размер курсора"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayCursorSizeButton_OnClicked" />
 
-            <Button
-                Text="Запустить консоль Python"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="StartPythonButton_OnClicked" />
+                <Button
+                    Text="Скорость двойного щелчка"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayDoubleClickTimeButton_OnClicked" />
 
-            <Button
-                Text="Объем оперативной памяти"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayTotalRamCapacityButton_OnClicked" />
+                <Button
+                    Text="Текущее время"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplaySystemTimeButton_OnClicked" />
 
-            <Button
-                Text="Количество потоков процессора"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="DisplayProcessorCountButton_OnClicked" />
+                <Button
+                    Text="Время с запуска системы"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayTimeSinceStartupButton_OnClicked" />
+
+                <Button
+                    Text="Запустить консоль Python"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="StartPythonButton_OnClicked" />
+
+                <Button
+                    Text="Объем оперативной памяти"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayTotalRamCapacityButton_OnClicked" />
+
+                <Button
+                    Text="Количество потоков процессора"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="DisplayProcessorCountButton_OnClicked" />
+                
+            </VerticalStackLayout>
 
         </VerticalStackLayout>
     </ScrollView>

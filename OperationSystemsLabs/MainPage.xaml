@@ -7,25 +7,35 @@
     <ScrollView>
         <VerticalStackLayout>
 
-            <Label
-                Text="Лабораторные работы по дисциплине"
-                Style="{StaticResource HeaderText}" />
+            <VerticalStackLayout
+                Margin="24, 16, 24, 0"
+                Spacing="4">
+                
+                <Label
+                    Text="Лабораторные работы по дисциплине"
+                    Style="{StaticResource HeaderText}" />
 
-            <Label
-                Text="&quot;Операционные системы&quot;"
-                Style="{StaticResource HeaderText}" />
+                <Label
+                    Text="&quot;Операционные системы&quot;"
+                    Style="{StaticResource HeaderText}" />
+                
+            </VerticalStackLayout>
 
-            <Button
-                Text="Лабораторная работа №1"
-                Style="{StaticResource BlueButtonStyle}"
-                HorizontalOptions="Center"
-                Clicked="Lab1Button_OnClicked" />
+            <VerticalStackLayout
+                Margin="24, 72, 24, 24"
+                Spacing="16">
 
-            <Button
-                Text="Лабораторная работа №2"
-                Style="{StaticResource BlueButtonStyle}"
-                HorizontalOptions="Center"
-                Clicked="Lab2Button_OnClicked" />
+                <Button
+                    Text="Лабораторная работа №1"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="Lab1Button_OnClicked" />
+
+                <Button
+                    Text="Лабораторная работа №2"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="Lab2Button_OnClicked" />
+                
+            </VerticalStackLayout>
 
         </VerticalStackLayout>
     </ScrollView>

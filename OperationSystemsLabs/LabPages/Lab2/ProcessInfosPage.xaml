@@ -6,18 +6,19 @@
 
     <ListView
         x:Name="MyListView">
-        
+
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout>
-                        <Label Text="{Binding ProcessNameAndId}" Style="{StaticResource RegularText}"/>
-                        <Label Text="{Binding Threads}" Style="{StaticResource RegularText}" Margin="24, 0"/>
+                    <StackLayout Margin="24, 16, 24, 24"
+                                 Spacing="8">
+                        <Label Text="{Binding ProcessNameAndId}" Style="{StaticResource RegularText}" />
+                        <Label Text="{Binding Threads}" Style="{StaticResource RegularText}" Margin="24, 0" />
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-        
+
     </ListView>
 
 </ContentPage>

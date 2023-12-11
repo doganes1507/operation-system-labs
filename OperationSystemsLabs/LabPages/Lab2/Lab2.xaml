@@ -2,86 +2,128 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:system="using:System"
              x:Class="OperationSystemsLabs.LabPages.Lab2.Lab2">
 
     <ScrollView>
         <VerticalStackLayout>
-            <Label
-                Text="Лабораторная работа №2"
-                Style="{StaticResource HeaderText}" />
 
-            <Label
-                Text="Процессы и потоки"
-                Style="{StaticResource RegularText}"
-                HorizontalOptions="Center" />
+            <VerticalStackLayout
+                Margin="24, 16, 24, 0"
+                Spacing="4">
 
-            <Label
-                Text="Идентификатор текущего процесса:"
-                Style="{StaticResource RegularText}" />
+                <Label
+                    Text="Лабораторная работа №2"
+                    Style="{StaticResource HeaderText}" />
 
-            <Label
-                x:Name="CurrentProcessId"
-                FontSize="14" />
+                <Label
+                    Text="&quot;Процессы и потоки&quot;"
+                    Style="{StaticResource RegularText}"
+                    HorizontalOptions="Center" />
 
-            <Label
-                Text="Псевдодескриптор текущего процесса:"
-                Style="{StaticResource RegularText}" />
+            </VerticalStackLayout>
 
-            <Label
-                x:Name="CurrentProcessPseudoDescriptor"
-                Style="{StaticResource RegularText}" />
+            <VerticalStackLayout
+                Margin="24, 72, 24, 0"
+                Spacing="16">
 
-            <Label
-                Text="Дескриптор текущего процесса:"
-                Style="{StaticResource RegularText}" />
+                <VerticalStackLayout
+                    Spacing="4">
 
-            <Label
-                x:Name="CurrentProcessDescriptor"
-                Style="{StaticResource RegularText}" />
+                    <Label
+                        Text="Идентификатор текущего процесса:"
+                        Style="{StaticResource RegularText}" />
 
-            <Label
-                Text="Копия дескриптора текущего процесса:"
-                Style="{StaticResource RegularText}" />
+                    <Label
+                        x:Name="CurrentProcessId"
+                        FontSize="14" />
 
-            <Label
-                x:Name="CurrentProcessDescriptorCopy"
-                Style="{StaticResource RegularText}" />
+                </VerticalStackLayout>
 
-            <Label
-                Text="Выберите и введите ключевое свойство для поиска процесса:"
-                Style="{StaticResource RegularText}"
-                HorizontalOptions="Center" />
 
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
+                <VerticalStackLayout
+                    Spacing="4">
 
-                <Entry
-                    Grid.Column="0"
-                    x:Name="ModuleProperty"
-                    FontSize="14" />
+                    <Label
+                        Text="Псевдодескриптор текущего процесса:"
+                        Style="{StaticResource RegularText}" />
 
-                <Picker
-                    Grid.Column="1"
-                    x:Name="ModulePropertyType"
-                    HorizontalOptions="End"
-                    FontSize="14" />
+                    <Label
+                        x:Name="CurrentProcessPseudoDescriptor"
+                        Style="{StaticResource RegularText}" />
 
-            </Grid>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    Spacing="4">
+
+                    <Label
+                        Text="Дескриптор текущего процесса:"
+                        Style="{StaticResource RegularText}" />
+
+                    <Label
+                        x:Name="CurrentProcessDescriptor"
+                        Style="{StaticResource RegularText}" />
+
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    Spacing="4">
+
+                    <Label
+                        Text="Копия дескриптора текущего процесса:"
+                        Style="{StaticResource RegularText}" />
+
+                    <Label
+                        x:Name="CurrentProcessDescriptorCopy"
+                        Style="{StaticResource RegularText}" />
+
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                Margin="24, 32, 24, 0"
+                Spacing="16">
+
+                <Label
+                    Text="Выберите и введите ключевое свойство для поиска модуля:"
+                    Style="{StaticResource RegularText}"
+                    HorizontalOptions="Center" />
+
+                <Grid
+                    ColumnSpacing="24">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Entry
+                        Grid.Column="0"
+                        x:Name="ModuleProperty"
+                        FontSize="14" />
+
+                    <Picker
+                        Grid.Column="1"
+                        x:Name="ModulePropertyType"
+                        HorizontalOptions="End"
+                        FontSize="14" />
+
+                </Grid>
+
+                <Button
+                    Text="Получить"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Clicked="GetModuleInfo_OnClicked" />
+
+            </VerticalStackLayout>
 
             <Button
-                Text="Получить"
-                Style="{StaticResource BlueButtonStyle}"
-                Clicked="GetModuleInfo_OnClicked" />
-            
-            <Button
+                Margin="24, 16, 24, 24"
                 Text="Посмотреть информацию о процессах"
                 Style="{StaticResource BlueButtonStyle}"
-                Clicked="NavigateToProcessInfosPage_OnClicked"/>
-            
+                Clicked="NavigateToProcessInfosPage_OnClicked" />
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
