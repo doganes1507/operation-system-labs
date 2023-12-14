@@ -17,7 +17,7 @@ public class WindowInfoService : IWinApiService
                 {
                     return GetWindowCoordinates(process);
                 }
-                catch (InvalidOperationException e)
+                catch (InvalidOperationException)
                 {
                     return "Server process has no window";
                 }

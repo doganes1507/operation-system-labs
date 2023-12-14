@@ -27,6 +27,8 @@ public class LocalSocketMessageService : ILocalMessageService
         var buffer = new byte[listener.SendBufferSize];
         var size = listener.Receive(buffer);
         
+        socket.Close();
+        
         return Encoding.UTF8.GetString(buffer, 0, size);
     }
 }
